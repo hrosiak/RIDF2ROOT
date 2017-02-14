@@ -2,6 +2,12 @@
 #define ic_h
 
 class IC{
+    private:
+    int th=0;
+    int nanodes=0;
+    int *data=nullptr;
+    int *time=nullptr;
+	
     public:
     double sum=-1;
     double av=-1;
@@ -15,11 +21,7 @@ class IC{
     int fired_anodes(){return fired;};
     void threshold(int t){th=t;};
     
-    private:
-    int th=0;
-    int nanodes=0;
-    int *data=nullptr;
-    int *time=nullptr;
+
 };
 
 void IC::clear(){
